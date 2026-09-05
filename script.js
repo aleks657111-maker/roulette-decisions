@@ -1,10 +1,4 @@
 (() => {
-  const COLORS = [
-    "#243b6b", "#1f6b52", "#8a5a1a", "#7a3a24",
-    "#3d3480", "#7a2e4e", "#1f6570", "#7a4a24",
-    "#4a3a80", "#245c3a", "#7a6512", "#742f45"
-  ];
-
   const SIZE = 360;
   const canvas = document.getElementById("wheel");
   const ctx = canvas.getContext("2d");
@@ -29,16 +23,16 @@
   let spinning = false;
   let highlightIndex = -1;
 
-  function colorFor(index) {
-    return COLORS[index % COLORS.length];
+  function hueFor(index, total) {
+    return (index * (360 / Math.max(total, 1))) % 360;
   }
 
-  function lighten(hex, amount) {
-    const num = parseInt(hex.slice(1), 16);
-    const r = Math.min(255, (num >> 16) + amount);
-    const g = Math.min(255, ((num >> 8) & 0xff) + amount);
-    const b = Math.min(255, (num & 0xff) + amount);
-    return `rgb(${r}, ${g}, ${b})`;
+  function colorFor(index) {
+    return `hsl(${hueFor(index, items.length)}, 82%, 56%)`;
+  }
+
+  function highlightColorFor(index) {
+    return `hsl(${hueFor(index, items.length)}, 90%, 78%)`;
   }
 
   function drawWheel() {
@@ -50,7 +44,7 @@
     ctx.clearRect(0, 0, SIZE, SIZE);
 
     if (n === 0) {
-      ctx.fillStyle = "#33364a";
+      ctx.fillStyle = "#eceef5";
       ctx.beginPath();
       ctx.arc(cx, cy, radius, 0, Math.PI * 2);
       ctx.fill();
@@ -67,9 +61,14 @@
       ctx.moveTo(cx, cy);
       ctx.arc(cx, cy, radius, start, end);
       ctx.closePath();
-      const baseColor = colorFor(i);
-      ctx.fillStyle = i === highlightIndex ? lighten(baseColor, 90) : baseColor;
+      ctx.fillStyle = i === highlightIndex ? highlightColorFor(i) : colorFor(i);
       ctx.fill();
+
+      ctx.save();
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = "#ffffff";
+      ctx.stroke();
+      ctx.restore();
 
       if (i === highlightIndex) {
         ctx.save();
@@ -84,11 +83,19 @@
       ctx.rotate(start + segAngle / 2);
       ctx.textAlign = "right";
       ctx.textBaseline = "middle";
-      ctx.font = "700 17px 'Segoe UI', sans-serif";
+      ctx.font = "700 16px 'Segoe UI', sans-serif";
       ctx.fillStyle = "#ffffff";
+      ctx.shadowColor = "rgba(0, 0, 0, 0.35)";
+      ctx.shadowBlur = 3;
       ctx.fillText(truncate(items[i], 16), radius - 14, 0);
       ctx.restore();
     }
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "#ffffff";
+    ctx.stroke();
   }
 
   function truncate(str, max) {
@@ -244,7 +251,7 @@
       const duration = 3 + Math.random() * 2.5;
       const delay = Math.random() * 1.2 + startDelayOffset;
       const size = 6 + Math.random() * 8;
-      const color = "#ffffff";
+      const color = `hsl(${Math.floor(Math.random() * 360)}, 85%, 60%)`;
       const isCircle = Math.random() > 0.5;
 
       piece.style.left = `${left}vw`;
