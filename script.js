@@ -1,5 +1,5 @@
 (() => {
-  const SIZE = 360;
+  const SIZE = 330;
   const canvas = document.getElementById("wheel");
   const ctx = canvas.getContext("2d");
   const dpr = window.devicePixelRatio || 1;
@@ -11,8 +11,6 @@
   const spinBtn = document.getElementById("spinBtn");
   const hint = document.getElementById("hint");
   const itemsList = document.getElementById("itemsList");
-  const addForm = document.getElementById("addForm");
-  const newItemInput = document.getElementById("newItemInput");
   const resultOverlay = document.getElementById("resultOverlay");
   const resultText = document.getElementById("resultText");
   const spinAgainBtn = document.getElementById("spinAgainBtn");
@@ -77,18 +75,6 @@
         ctx.stroke();
         ctx.restore();
       }
-
-      ctx.save();
-      ctx.translate(cx, cy);
-      ctx.rotate(start + segAngle / 2);
-      ctx.textAlign = "right";
-      ctx.textBaseline = "middle";
-      ctx.font = "700 16px 'Segoe UI', sans-serif";
-      ctx.fillStyle = "#ffffff";
-      ctx.shadowColor = "rgba(0, 0, 0, 0.35)";
-      ctx.shadowBlur = 3;
-      ctx.fillText(truncate(items[i], 16), radius - 14, 0);
-      ctx.restore();
     }
 
     ctx.beginPath();
@@ -96,10 +82,6 @@
     ctx.lineWidth = 3;
     ctx.strokeStyle = "#ffffff";
     ctx.stroke();
-  }
-
-  function truncate(str, max) {
-    return str.length > max ? str.slice(0, max - 1) + "…" : str;
   }
 
   function renderList() {
@@ -119,62 +101,10 @@
       label.textContent = item;
       li.appendChild(label);
 
-      const editBtn = document.createElement("button");
-      editBtn.className = "icon-btn edit";
-      editBtn.textContent = "✎";
-      editBtn.title = "Редактировать";
-      editBtn.addEventListener("click", () => startEdit(li, label, index));
-      li.appendChild(editBtn);
-
-      const deleteBtn = document.createElement("button");
-      deleteBtn.className = "icon-btn delete";
-      deleteBtn.textContent = "✕";
-      deleteBtn.title = "Удалить";
-      deleteBtn.addEventListener("click", () => deleteItem(index));
-      li.appendChild(deleteBtn);
-
       itemsList.appendChild(li);
     });
 
     updateSpinAvailability();
-  }
-
-  function startEdit(li, label, index) {
-    const input = document.createElement("input");
-    input.type = "text";
-    input.className = "item-input";
-    input.value = items[index];
-    input.maxLength = 40;
-
-    li.replaceChild(input, label);
-    input.focus();
-    input.select();
-
-    const commit = () => {
-      const value = input.value.trim();
-      if (value) {
-        items[index] = value;
-      }
-      highlightIndex = -1;
-      renderList();
-      drawWheel();
-    };
-
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        commit();
-      } else if (e.key === "Escape") {
-        renderList();
-      }
-    });
-    input.addEventListener("blur", commit);
-  }
-
-  function deleteItem(index) {
-    items.splice(index, 1);
-    highlightIndex = -1;
-    renderList();
-    drawWheel();
   }
 
   function updateSpinAvailability() {
@@ -182,17 +112,6 @@
     spinBtn.disabled = !canSpin;
     hint.hidden = items.length >= 2;
   }
-
-  addForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const value = newItemInput.value.trim();
-    if (!value) return;
-    items.push(value);
-    newItemInput.value = "";
-    highlightIndex = -1;
-    renderList();
-    drawWheel();
-  });
 
   function spin() {
     if (spinning || items.length < 2) return;

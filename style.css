@@ -54,7 +54,7 @@ h1 {
 
 .wheel-wrapper {
   position: relative;
-  width: 360px;
+  width: 330px;
   max-width: 82vw;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -189,65 +189,6 @@ h1 {
   white-space: nowrap;
 }
 
-.item-input {
-  flex: 1;
-  padding: 4px 6px;
-  border-radius: 6px;
-  border: 1px solid var(--accent);
-  background: var(--bg);
-  color: var(--text);
-  font-size: 0.95rem;
-}
-
-.icon-btn {
-  border: none;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 4px 6px;
-  border-radius: 6px;
-  line-height: 1;
-}
-
-.icon-btn:hover {
-  background: var(--panel);
-  color: var(--text);
-}
-
-.icon-btn.delete:hover {
-  color: var(--danger);
-}
-
-.add-form {
-  display: flex;
-  gap: 8px;
-}
-
-.add-form input {
-  flex: 1;
-  padding: 8px 10px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: #ffffff;
-  color: var(--text);
-  font-size: 0.95rem;
-}
-
-.add-form button {
-  padding: 8px 14px;
-  border: none;
-  border-radius: 8px;
-  background: var(--accent);
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.add-form button:hover {
-  background: var(--accent-hover);
-}
-
 .result-overlay {
   position: fixed;
   inset: 0;
@@ -366,7 +307,7 @@ h1 {
   }
 
   .wheel-wrapper {
-    width: 300px;
+    width: 280px;
     max-width: 78vw;
   }
 
