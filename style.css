@@ -62,25 +62,12 @@ h1 {
   justify-content: center;
 }
 
-.wheel-ring {
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    #ff3b3b, #ff9f1a, #ffe14d, #63e06b,
-    #29c5d6, #4d7bff, #a855f7, #ff3b3b
-  );
-  filter: blur(0.2px);
-  z-index: 0;
-}
-
 #wheel {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 0 6px #ffffff, 0 10px 28px rgba(30, 20, 60, 0.18);
+  box-shadow: 0 0 0 6px #0000004d, 0 8px 24px rgba(0, 0, 0, 0.25);
   will-change: transform;
   z-index: 1;
 }
