@@ -16,7 +16,7 @@
   const spinAgainBtn = document.getElementById("spinAgainBtn");
   const closeResultBtn = document.getElementById("closeResultBtn");
 
-  let items = ["Штанга", "Гантели", "Турник", "Скамья", "Гиря", "Эспандер"];
+  let items = ["Ева", "Альмира", "Михаил", "София", "Софи", "Сергей", "Виктория", "Любовь", "Никита", "Василиса"];
   let rotation = 0;
   let spinning = false;
   let highlightIndex = -1;
@@ -33,10 +33,51 @@
     return `hsl(${hueFor(index, items.length)}, 90%, 78%)`;
   }
 
-  function drawWheel() {
+  function wheelGeometry() {
     const cx = SIZE / 2;
     const cy = SIZE / 2;
     const radius = Math.min(cx, cy) - 4;
+    return { cx, cy, radius };
+  }
+
+  function drawSector(targetCtx, index, total, isHighlight) {
+    const { cx, cy, radius } = wheelGeometry();
+    const segAngle = (Math.PI * 2) / total;
+    const start = index * segAngle;
+    const end = start + segAngle;
+
+    targetCtx.beginPath();
+    targetCtx.moveTo(cx, cy);
+    targetCtx.arc(cx, cy, radius, start, end);
+    targetCtx.closePath();
+    targetCtx.fillStyle = isHighlight ? highlightColorFor(index) : colorFor(index);
+    targetCtx.fill();
+
+    if (isHighlight) {
+      targetCtx.save();
+      targetCtx.lineWidth = 4;
+      targetCtx.strokeStyle = "#ffffff";
+      targetCtx.beginPath();
+      targetCtx.arc(cx, cy, radius - 2, start, end);
+      targetCtx.stroke();
+      targetCtx.restore();
+    }
+
+    targetCtx.save();
+    targetCtx.translate(cx, cy);
+    targetCtx.rotate(start + segAngle / 2);
+    targetCtx.textAlign = "right";
+    targetCtx.textBaseline = "middle";
+    targetCtx.font = "700 15px 'Segoe UI', sans-serif";
+    targetCtx.fillStyle = "#ffffff";
+    targetCtx.shadowColor = "rgba(0, 0, 0, 0.35)";
+    targetCtx.shadowBlur = 3;
+    targetCtx.fillText(truncate(items[index], 15), radius - 14, 0);
+    targetCtx.restore();
+  }
+
+  function drawWheel() {
+    const { cx, cy, radius } = wheelGeometry();
     const n = items.length;
 
     ctx.clearRect(0, 0, SIZE, SIZE);
@@ -52,37 +93,7 @@
     const segAngle = (Math.PI * 2) / n;
 
     for (let i = 0; i < n; i++) {
-      const start = i * segAngle;
-      const end = start + segAngle;
-
-      ctx.beginPath();
-      ctx.moveTo(cx, cy);
-      ctx.arc(cx, cy, radius, start, end);
-      ctx.closePath();
-      ctx.fillStyle = i === highlightIndex ? highlightColorFor(i) : colorFor(i);
-      ctx.fill();
-
-      if (i === highlightIndex) {
-        ctx.save();
-        ctx.lineWidth = 4;
-        ctx.strokeStyle = "#ffffff";
-        ctx.beginPath();
-        ctx.arc(cx, cy, radius - 2, start, end);
-        ctx.stroke();
-        ctx.restore();
-      }
-
-      ctx.save();
-      ctx.translate(cx, cy);
-      ctx.rotate(start + segAngle / 2);
-      ctx.textAlign = "right";
-      ctx.textBaseline = "middle";
-      ctx.font = "700 15px 'Segoe UI', sans-serif";
-      ctx.fillStyle = "#ffffff";
-      ctx.shadowColor = "rgba(0, 0, 0, 0.35)";
-      ctx.shadowBlur = 3;
-      ctx.fillText(truncate(items[i], 15), radius - 14, 0);
-      ctx.restore();
+      drawSector(ctx, i, n, i === highlightIndex);
     }
 
     ctx.save();
@@ -167,8 +178,74 @@
       drawWheel();
       updateSpinAvailability();
       showResult(items[winningIndex]);
+      removeWinner(winningIndex);
     };
     canvas.addEventListener("transitionend", onEnd);
+  }
+
+  const FALL_DURATION_MS = 900;
+
+  function spawnFallingSector(index) {
+    const { cx, cy, radius } = wheelGeometry();
+    const n = items.length;
+
+    // Cut the sector out of the main wheel, leaving a clean hole behind.
+    const segAngle = (Math.PI * 2) / n;
+    const start = index * segAngle;
+    const end = start + segAngle;
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, radius, start, end);
+    ctx.closePath();
+    ctx.fillStyle = "#ffffff";
+    ctx.fill();
+    ctx.restore();
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "#ffffff";
+    ctx.stroke();
+
+    // Render just that sector onto its own canvas so it can fall independently.
+    const clone = document.createElement("canvas");
+    clone.className = "falling-sector";
+    clone.width = SIZE * dpr;
+    clone.height = SIZE * dpr;
+    clone.style.width = `${SIZE}px`;
+    clone.style.height = `${SIZE}px`;
+    const cctx = clone.getContext("2d");
+    cctx.scale(dpr, dpr);
+    drawSector(cctx, index, n, true);
+
+    const baseTransform = canvas.style.transform || "rotate(0deg)";
+    clone.style.transform = baseTransform;
+    clone.style.transition = `transform ${FALL_DURATION_MS}ms cubic-bezier(0.5, 0, 0.85, 0.35), opacity ${FALL_DURATION_MS * 0.7}ms ease-in ${FALL_DURATION_MS * 0.3}ms`;
+    canvas.insertAdjacentElement("afterend", clone);
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        clone.style.transform = `translateY(520px) rotate(30deg) ${baseTransform}`;
+        clone.style.opacity = "0";
+      });
+    });
+
+    clone.addEventListener("transitionend", () => clone.remove(), { once: true });
+  }
+
+  function removeWinner(index) {
+    const li = itemsList.children[index];
+    if (li) li.classList.add("item-row--removing");
+
+    spawnFallingSector(index);
+
+    setTimeout(() => {
+      items.splice(index, 1);
+      highlightIndex = -1;
+      renderList();
+      drawWheel();
+    }, FALL_DURATION_MS);
   }
 
   function showResult(name) {

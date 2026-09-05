@@ -72,6 +72,16 @@ h1 {
   z-index: 1;
 }
 
+.falling-sector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 4;
+  opacity: 1;
+}
+
 .pointer {
   position: absolute;
   top: -6px;
@@ -160,6 +170,12 @@ h1 {
   border: 1px solid var(--border);
   padding: 8px 10px;
   border-radius: 8px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.item-row.item-row--removing {
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .item-color {
