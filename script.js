@@ -164,11 +164,11 @@
     const targetMod = ((pointerAngleDeg - sectorCenterDeg) % 360 + 360) % 360;
 
     const currentMod = ((rotation % 360) + 360) % 360;
-    const extraSpins = 6;
+    const extraSpins = 10;
     const delta = extraSpins * 360 + ((targetMod - currentMod + 360) % 360);
     rotation += delta;
 
-    canvas.style.transition = "transform 6s cubic-bezier(0.22, 0.68, 0.1, 1)";
+    canvas.style.transition = "transform 7.5s cubic-bezier(0.19, 0.86, 0.24, 1)";
     canvas.style.transform = `rotate(${rotation}deg)`;
 
     const onEnd = () => {
