@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Рулетка решений</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Рулетка решений</h1>
+
+  <div class="app">
+    <div class="wheel-area">
+      <div class="wheel-wrapper">
+        <div class="pointer"></div>
+        <canvas id="wheel" width="360" height="360"></canvas>
+        <button id="spinBtn" class="spin-btn">Крутить!</button>
+      </div>
+      <p id="hint" class="hint" hidden>Добавьте хотя бы 2 пункта, чтобы крутить колесо</p>
+    </div>
+
+    <div class="items-area">
+      <h2>Пункты</h2>
+      <ul id="itemsList" class="items-list"></ul>
+
+      <form id="addForm" class="add-form">
+        <input type="text" id="newItemInput" placeholder="Новый пункт..." maxlength="40" required>
+        <button type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="resultOverlay" class="result-overlay" hidden>
+    <div class="result-box">
+      <p class="result-label">Выпало:</p>
+      <h2 id="resultText" class="result-text"></h2>
+      <div class="result-buttons">
+        <button id="spinAgainBtn">Крутить снова</button>
+        <button id="closeResultBtn">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
