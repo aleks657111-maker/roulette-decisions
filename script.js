@@ -62,26 +62,50 @@
       ctx.fillStyle = i === highlightIndex ? highlightColorFor(i) : colorFor(i);
       ctx.fill();
 
-      ctx.save();
-      ctx.lineWidth = 2;
-      ctx.strokeStyle = "#ffffff";
-      ctx.stroke();
-      ctx.restore();
-
       if (i === highlightIndex) {
         ctx.save();
         ctx.lineWidth = 4;
         ctx.strokeStyle = "#ffffff";
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius - 2, start, end);
         ctx.stroke();
         ctx.restore();
       }
+
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(start + segAngle / 2);
+      ctx.textAlign = "right";
+      ctx.textBaseline = "middle";
+      ctx.font = "700 15px 'Segoe UI', sans-serif";
+      ctx.fillStyle = "#ffffff";
+      ctx.shadowColor = "rgba(0, 0, 0, 0.35)";
+      ctx.shadowBlur = 3;
+      ctx.fillText(truncate(items[i], 15), radius - 14, 0);
+      ctx.restore();
     }
+
+    ctx.save();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#ffffff";
+    for (let i = 0; i < n; i++) {
+      const angle = i * segAngle;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(cx + radius * Math.cos(angle), cy + radius * Math.sin(angle));
+      ctx.stroke();
+    }
+    ctx.restore();
 
     ctx.beginPath();
     ctx.arc(cx, cy, radius, 0, Math.PI * 2);
     ctx.lineWidth = 3;
     ctx.strokeStyle = "#ffffff";
     ctx.stroke();
+  }
+
+  function truncate(str, max) {
+    return str.length > max ? str.slice(0, max - 1) + "…" : str;
   }
 
   function renderList() {
