@@ -1,0 +1,14 @@
+- generic [ref=f11e2]:
+  - generic [ref=f11e3]:
+    - generic [ref=f11e4]:
+      - text: G
+      - generic [ref=f11e5]: ·
+      - text: A
+    - navigation [ref=f11e6]:
+      - link "Home" [ref=f11e7] [cursor=pointer]:
+        - /url: "#"
+      - link "Archive" [ref=f11e8] [cursor=pointer]:
+        - /url: "#"
+      - link "About" [ref=f11e9] [cursor=pointer]:
+        - /url: "#"
+  - heading "Grain Archive" [level=1] [ref=f11e10]
