@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - heading "Рулетка решений" [level=1] [ref=e2]
+  - generic [ref=e3]:
+    - button "Крутить!" [ref=e9] [cursor=pointer]
+    - generic [ref=e10]:
+      - heading "Пункты" [level=2] [ref=e11]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - generic [ref=e15]: Штанга
+          - button "✎" [ref=e16] [cursor=pointer]
+          - button "✕" [ref=e17] [cursor=pointer]
+        - listitem [ref=e18]:
+          - generic [ref=e20]: Гантели
+          - button "✎" [ref=e21] [cursor=pointer]
+          - button "✕" [ref=e22] [cursor=pointer]
+        - listitem [ref=e23]:
+          - generic [ref=e25]: Турник
+          - button "✎" [ref=e26] [cursor=pointer]
+          - button "✕" [ref=e27] [cursor=pointer]
+        - listitem [ref=e28]:
+          - generic [ref=e30]: Скамья
+          - button "✎" [ref=e31] [cursor=pointer]
+          - button "✕" [ref=e32] [cursor=pointer]
+        - listitem [ref=e33]:
+          - generic [ref=e35]: Гиря
+          - button "✎" [ref=e36] [cursor=pointer]
+          - button "✕" [ref=e37] [cursor=pointer]
+        - listitem [ref=e38]:
+          - generic [ref=e40]: Эспандер
+          - button "✎" [ref=e41] [cursor=pointer]
+          - button "✕" [ref=e42] [cursor=pointer]
+      - generic [ref=e43]:
+        - textbox "Новый пункт..." [ref=e44]
+        - button "Добавить" [ref=e45] [cursor=pointer]

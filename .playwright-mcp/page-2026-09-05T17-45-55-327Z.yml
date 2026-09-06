@@ -1,0 +1,31 @@
+- generic [active] [ref=f1e1]:
+  - heading "Рулетка решений" [level=1] [ref=f1e2]
+  - generic [ref=f1e3]:
+    - button "Крутить!" [ref=f1e8] [cursor=pointer]
+    - generic [ref=f1e9]:
+      - heading "Пункты" [level=2] [ref=f1e10]
+      - list [ref=f1e11]:
+        - listitem [ref=f1e42]:
+          - generic [ref=f1e44]: Ева
+        - listitem [ref=f1e45]:
+          - generic [ref=f1e47]: Михаил
+        - listitem [ref=f1e48]:
+          - generic [ref=f1e50]: София
+        - listitem [ref=f1e51]:
+          - generic [ref=f1e53]: Софи
+        - listitem [ref=f1e54]:
+          - generic [ref=f1e56]: Сергей
+        - listitem [ref=f1e57]:
+          - generic [ref=f1e59]: Виктория
+        - listitem [ref=f1e60]:
+          - generic [ref=f1e62]: Любовь
+        - listitem [ref=f1e63]:
+          - generic [ref=f1e65]: Никита
+        - listitem [ref=f1e66]:
+          - generic [ref=f1e68]: Василиса
+  - generic [ref=f1e70]:
+    - paragraph [ref=f1e71]: "Выпало:"
+    - heading "Альмира" [level=2] [ref=f1e72]
+    - generic [ref=f1e73]:
+      - button "Крутить снова" [ref=f1e74] [cursor=pointer]
+      - button "Закрыть" [ref=f1e75] [cursor=pointer]
