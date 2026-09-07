@@ -12,6 +12,12 @@
       "sourceType": "github",
       "skillPath": "skills/shadcn/SKILL.md",
       "computedHash": "d04e43ec01e921558b93bb8046c14a42a22556689a2827243df900825a4e1604"
+    },
+    "vibe-deploy": {
+      "source": "swan4er/vibe-deploy",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "a5b90a63478b49179ce46fdf69a2fe9bc0b92e08b23a7f5557a5f9a9f3c7537a"
     }
   }
 }

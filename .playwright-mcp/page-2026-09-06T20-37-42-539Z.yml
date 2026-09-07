@@ -1,0 +1,177 @@
+- generic [active] [ref=f8e1]:
+  - link "Перейти к содержанию" [ref=f8e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f8e3]:
+    - generic [ref=f8e4]:
+      - link "Здрасьте, гости — на главную" [ref=f8e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [aria-hidden] [ref=f8e6]: ЗГ
+        - generic [ref=f8e7]: Здрасьте,гости
+      - navigation "Основная навигация" [ref=f8e8]:
+        - link "Меню" [ref=f8e9] [cursor=pointer]:
+          - /url: "#menu"
+        - link "Отзывы" [ref=f8e10] [cursor=pointer]:
+          - /url: "#trust"
+        - link "Удобства" [ref=f8e11] [cursor=pointer]:
+          - /url: "#amenities"
+        - link "Контакты" [ref=f8e12] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=f8e13]:
+        - link "На карте" [ref=f8e14] [cursor=pointer]:
+          - /url: "#contact"
+        - 'link "Позвонить: +7 978 523-01-45" [ref=f8e15] [cursor=pointer]':
+          - /url: tel:+79785230145
+          - generic [aria-hidden] [ref=f8e18]: +7 978 523-01-45
+  - main [ref=f8e19]:
+    - region "Главный экран" [ref=f8e20]:
+      - generic [ref=f8e21]:
+        - generic [ref=f8e22]:
+          - generic [ref=f8e23]: ★★★★★
+          - generic [ref=f8e24]: 5,0
+          - generic [ref=f8e25]: 213 оценок
+        - heading "ЗДРАСЬТЕ, ГОСТИ" [level=1] [ref=f8e26]:
+          - generic [ref=f8e27]: ЗДРАСЬТЕ,
+          - generic [ref=f8e28]: ГОСТИ
+        - generic [ref=f8e29]:
+          - generic [ref=f8e30]:
+            - generic [ref=f8e31]: "152"
+            - generic [ref=f8e32]: живых отзыва
+          - paragraph [ref=f8e33]: "Кафе в Джанкое, куда возвращаются: тёплый приём, домашние завтраки 9:00–12:00 и полноценная кухня каждый день."
+          - generic [ref=f8e34]:
+            - link "Позвонить и забронировать" [ref=f8e35] [cursor=pointer]:
+              - /url: tel:+79785230145
+            - link "Смотреть меню" [ref=f8e36] [cursor=pointer]:
+              - /url: "#menu"
+          - link "ул. Калинина, 11, Джанкой, 1 этаж, Республика Крым" [ref=f8e37] [cursor=pointer]:
+            - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+    - region "Репутация" [ref=f8e40]:
+      - generic [ref=f8e41]:
+        - generic [ref=f8e42]:
+          - generic [ref=f8e44]:
+            - text: Хорошееместо
+            - strong [ref=f8e47]: "2026"
+          - paragraph [ref=f8e48]: Награда сервиса Яндекс.Карты за стабильно высокие оценки гостей «Здрасьте, гости» третий сезон подряд.
+        - generic [ref=f8e49]:
+          - generic [ref=f8e50]:
+            - generic [ref=f8e51]:
+              - text: "96"
+              - emphasis [ref=f8e52]: "%"
+            - generic [ref=f8e53]: довольны едой
+          - generic [ref=f8e54]:
+            - generic [ref=f8e55]:
+              - text: "99"
+              - emphasis [ref=f8e56]: "%"
+            - generic [ref=f8e57]: хвалят атмосферу
+          - generic [ref=f8e58]:
+            - generic [ref=f8e59]:
+              - text: "94"
+              - emphasis [ref=f8e60]: "%"
+            - generic [ref=f8e61]: отмечают интерьер
+        - paragraph [ref=f8e62]: «Уютная и доброжелательная атмосфера, внимательный персонал» — так гости описывают «Здрасьте, гости» в отзывах на Яндекс.Картах.
+    - region "Меню" [ref=f8e63]:
+      - generic [ref=f8e64]:
+        - heading "Что подают к столу" [level=2] [ref=f8e65]
+        - generic [ref=f8e66]:
+          - generic [ref=f8e72]:
+            - heading "Завтраки" [level=3] [ref=f8e73]
+            - text: подаются с 9:00 до 12:00
+          - list [ref=f8e74]:
+            - listitem [ref=f8e75]:
+              - generic [ref=f8e76]: Блины
+              - generic [ref=f8e78]: со сладкой и солёной начинкой
+            - listitem [ref=f8e79]:
+              - generic [ref=f8e80]: Сырники
+              - generic [ref=f8e82]: со сметаной или соусом на выбор
+            - listitem [ref=f8e83]:
+              - generic [ref=f8e84]: Омлеты
+              - generic [ref=f8e86]: классический и с начинками
+        - generic [ref=f8e87]:
+          - generic [ref=f8e93]:
+            - heading "Горячее" [level=3] [ref=f8e94]
+            - text: основное меню, целый день
+          - list [ref=f8e95]:
+            - listitem [ref=f8e96]:
+              - generic [ref=f8e97]: Венский шницель
+              - generic [ref=f8e99]: хрустящая панировка, классика
+            - listitem [ref=f8e100]:
+              - generic [ref=f8e101]: Томлёные свиные рёбра
+              - generic [ref=f8e103]: долгое томление, мягкое мясо
+        - generic [ref=f8e104]:
+          - generic [ref=f8e111]:
+            - heading "Холодное и десерт" [level=3] [ref=f8e112]
+            - text: лёгкое и сладкое
+          - list [ref=f8e113]:
+            - listitem [ref=f8e114]:
+              - generic [ref=f8e115]: Салаты из морепродуктов
+              - generic [ref=f8e117]: свежие и сытные
+            - listitem [ref=f8e118]:
+              - generic [ref=f8e119]: Эклеры и десерты
+              - generic [ref=f8e121]: к кофе с собой или на месте
+        - paragraph [ref=f8e122]:
+          - text: Полный список блюд и цены — по телефону
+          - link "+7 978 523-01-45" [ref=f8e123] [cursor=pointer]:
+            - /url: tel:+79785230145
+          - text: или у официанта в зале.
+    - region "Удобства" [ref=f8e124]:
+      - generic [ref=f8e125]:
+        - heading "Продумано для гостей" [level=2] [ref=f8e126]
+        - list [ref=f8e127]:
+          - listitem [ref=f8e128]: Доставка и навынос
+          - listitem [ref=f8e132]: Парковка у входа
+          - listitem [ref=f8e136]: Wi-Fi для гостей
+          - listitem [ref=f8e140]: Кофе с собой
+          - listitem [ref=f8e144]: Карта и наличные
+          - listitem [ref=f8e147]: Детская комната
+          - listitem [ref=f8e151]: Доступно для колясок
+          - listitem [ref=f8e156]: Живая музыка
+        - paragraph [ref=f8e161]: С собой на территорию заведения животных приносить нельзя — заботимся о комфорте всех гостей.
+    - region "Контакты" [ref=f8e162]:
+      - generic [ref=f8e163]:
+        - generic [ref=f8e164]:
+          - heading "Ждём в гости" [level=2] [ref=f8e165]
+          - generic [ref=f8e166]:
+            - generic [ref=f8e167]:
+              - term [ref=f8e168]: Адрес
+              - definition [ref=f8e169]: ул. Калинина, 11, Джанкой, 1 этаж, Республика Крым
+            - generic [ref=f8e170]:
+              - term [ref=f8e171]: Телефон
+              - definition [ref=f8e172]:
+                - link "+7 978 523-01-45" [ref=f8e173] [cursor=pointer]:
+                  - /url: tel:+79785230145
+            - generic [ref=f8e174]:
+              - term [ref=f8e175]: Завтраки
+              - definition [ref=f8e176]: ежедневно 9:00–12:00
+            - generic [ref=f8e177]:
+              - term [ref=f8e178]: Рейтинг
+              - definition [ref=f8e179]: 5,0 · 213 оценок · 152 отзыва на Яндекс.Картах
+          - generic [ref=f8e180]:
+            - link "Позвонить сейчас" [ref=f8e181] [cursor=pointer]:
+              - /url: tel:+79785230145
+            - link "Проложить маршрут" [ref=f8e182] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+        - generic [ref=f8e184]:
+          - generic [ref=f8e185]: ул. Калинина, 11
+          - generic [ref=f8e186]: ДЖАНКОЙ
+          - generic [ref=f8e187]: Республика Крым
+  - contentinfo [ref=f8e188]:
+    - generic [ref=f8e189]:
+      - generic [ref=f8e190]: Здрасьте,гости
+      - generic [ref=f8e191]:
+        - generic [ref=f8e192]:
+          - heading "Контакты" [level=3] [ref=f8e193]
+          - paragraph [ref=f8e194]:
+            - link "+7 978 523-01-45" [ref=f8e195] [cursor=pointer]:
+              - /url: tel:+79785230145
+          - paragraph [ref=f8e196]: ул. Калинина, 11, Джанкой,1 этаж, Республика Крым
+        - generic [ref=f8e197]:
+          - heading "Часы" [level=3] [ref=f8e198]
+          - paragraph [ref=f8e199]: "Завтраки: 9:00–12:00"
+          - paragraph [ref=f8e200]: Доставка и навынос — ежедневно
+        - generic [ref=f8e201]:
+          - heading "На карте" [level=4] [ref=f8e202]
+          - paragraph [ref=f8e203]:
+            - link "Яндекс.Карты →" [ref=f8e204] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+    - generic [ref=f8e205]:
+      - generic [ref=f8e206]: © 2026 «Здрасьте, гости»
+      - generic [ref=f8e207]: Хорошее место 2026

@@ -1,0 +1,165 @@
+- generic [active] [ref=f11e1]:
+  - link "Перейти к содержанию" [ref=f11e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f11e3]:
+    - generic [ref=f11e4]:
+      - link "Здрасьте, гости — на главную" [ref=f11e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [aria-hidden] [ref=f11e6]: ЗГ
+        - generic [ref=f11e7]: Здрасьте,гости
+      - 'link "Позвонить: +7 978 523-01-45" [ref=f11e9] [cursor=pointer]':
+        - /url: tel:+79785230145
+      - button "Открыть меню" [ref=f11e12] [cursor=pointer]
+  - main [ref=f11e16]:
+    - region "Главный экран" [ref=f11e17]:
+      - generic [ref=f11e18]:
+        - generic [ref=f11e19]:
+          - generic [ref=f11e20]: ★★★★★
+          - generic [ref=f11e21]: 5,0
+          - generic [ref=f11e22]: 213 оценок
+        - heading "ЗДРАСЬТЕ, ГОСТИ" [level=1] [ref=f11e23]:
+          - generic [ref=f11e24]: ЗДРАСЬТЕ,
+          - generic [ref=f11e25]: ГОСТИ
+        - generic [ref=f11e26]:
+          - generic [ref=f11e27]:
+            - generic [ref=f11e28]: "152"
+            - generic [ref=f11e29]: живых отзыва
+          - paragraph [ref=f11e30]: "Кафе в Джанкое, куда возвращаются: тёплый приём, домашние завтраки 9:00–12:00 и полноценная кухня каждый день."
+          - generic [ref=f11e31]:
+            - link "Позвонить и забронировать" [ref=f11e32] [cursor=pointer]:
+              - /url: tel:+79785230145
+            - link "Смотреть меню" [ref=f11e33] [cursor=pointer]:
+              - /url: "#menu"
+          - link "ул. Калинина, 11, Джанкой, 1 этаж, Республика Крым" [ref=f11e34] [cursor=pointer]:
+            - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+    - region "Репутация" [ref=f11e37]:
+      - generic [ref=f11e38]:
+        - generic [ref=f11e39]:
+          - generic [ref=f11e41]:
+            - text: Хорошееместо
+            - strong [ref=f11e44]: "2026"
+          - paragraph [ref=f11e45]: Награда сервиса Яндекс.Карты за стабильно высокие оценки гостей «Здрасьте, гости» третий сезон подряд.
+        - generic [ref=f11e46]:
+          - generic [ref=f11e47]:
+            - generic [ref=f11e48]:
+              - text: "96"
+              - emphasis [ref=f11e49]: "%"
+            - generic [ref=f11e50]: довольны едой
+          - generic [ref=f11e51]:
+            - generic [ref=f11e52]:
+              - text: "99"
+              - emphasis [ref=f11e53]: "%"
+            - generic [ref=f11e54]: хвалят атмосферу
+          - generic [ref=f11e55]:
+            - generic [ref=f11e56]:
+              - text: "94"
+              - emphasis [ref=f11e57]: "%"
+            - generic [ref=f11e58]: отмечают интерьер
+        - paragraph [ref=f11e59]: «Уютная и доброжелательная атмосфера, внимательный персонал» — так гости описывают «Здрасьте, гости» в отзывах на Яндекс.Картах.
+    - region "Меню" [ref=f11e60]:
+      - generic [ref=f11e61]:
+        - heading "Что подают к столу" [level=2] [ref=f11e62]
+        - generic [ref=f11e63]:
+          - generic [ref=f11e69]:
+            - heading "Завтраки" [level=3] [ref=f11e70]
+            - text: подаются с 9:00 до 12:00
+          - list [ref=f11e71]:
+            - listitem [ref=f11e72]:
+              - generic [ref=f11e73]: Блины
+              - generic [ref=f11e74]: со сладкой и солёной начинкой
+            - listitem [ref=f11e75]:
+              - generic [ref=f11e76]: Сырники
+              - generic [ref=f11e77]: со сметаной или соусом на выбор
+            - listitem [ref=f11e78]:
+              - generic [ref=f11e79]: Омлеты
+              - generic [ref=f11e80]: классический и с начинками
+        - generic [ref=f11e81]:
+          - generic [ref=f11e87]:
+            - heading "Горячее" [level=3] [ref=f11e88]
+            - text: основное меню, целый день
+          - list [ref=f11e89]:
+            - listitem [ref=f11e90]:
+              - generic [ref=f11e91]: Венский шницель
+              - generic [ref=f11e92]: хрустящая панировка, классика
+            - listitem [ref=f11e93]:
+              - generic [ref=f11e94]: Томлёные свиные рёбра
+              - generic [ref=f11e95]: долгое томление, мягкое мясо
+        - generic [ref=f11e96]:
+          - generic [ref=f11e103]:
+            - heading "Холодное и десерт" [level=3] [ref=f11e104]
+            - text: лёгкое и сладкое
+          - list [ref=f11e105]:
+            - listitem [ref=f11e106]:
+              - generic [ref=f11e107]: Салаты из морепродуктов
+              - generic [ref=f11e108]: свежие и сытные
+            - listitem [ref=f11e109]:
+              - generic [ref=f11e110]: Эклеры и десерты
+              - generic [ref=f11e111]: к кофе с собой или на месте
+        - paragraph [ref=f11e112]:
+          - text: Полный список блюд и цены — по телефону
+          - link "+7 978 523-01-45" [ref=f11e113] [cursor=pointer]:
+            - /url: tel:+79785230145
+          - text: или у официанта в зале.
+    - region "Удобства" [ref=f11e114]:
+      - generic [ref=f11e115]:
+        - heading "Продумано для гостей" [level=2] [ref=f11e116]
+        - list [ref=f11e117]:
+          - listitem [ref=f11e118]: Доставка и навынос
+          - listitem [ref=f11e122]: Парковка у входа
+          - listitem [ref=f11e126]: Wi-Fi для гостей
+          - listitem [ref=f11e130]: Кофе с собой
+          - listitem [ref=f11e134]: Карта и наличные
+          - listitem [ref=f11e137]: Детская комната
+          - listitem [ref=f11e141]: Доступно для колясок
+          - listitem [ref=f11e146]: Живая музыка
+        - paragraph [ref=f11e151]: С собой на территорию заведения животных приносить нельзя — заботимся о комфорте всех гостей.
+    - region "Контакты" [ref=f11e152]:
+      - generic [ref=f11e153]:
+        - generic [ref=f11e154]:
+          - heading "Ждём в гости" [level=2] [ref=f11e155]
+          - generic [ref=f11e156]:
+            - generic [ref=f11e157]:
+              - term [ref=f11e158]: Адрес
+              - definition [ref=f11e159]: ул. Калинина, 11, Джанкой, 1 этаж, Республика Крым
+            - generic [ref=f11e160]:
+              - term [ref=f11e161]: Телефон
+              - definition [ref=f11e162]:
+                - link "+7 978 523-01-45" [ref=f11e163] [cursor=pointer]:
+                  - /url: tel:+79785230145
+            - generic [ref=f11e164]:
+              - term [ref=f11e165]: Завтраки
+              - definition [ref=f11e166]: ежедневно 9:00–12:00
+            - generic [ref=f11e167]:
+              - term [ref=f11e168]: Рейтинг
+              - definition [ref=f11e169]: 5,0 · 213 оценок · 152 отзыва на Яндекс.Картах
+          - generic [ref=f11e170]:
+            - link "Позвонить сейчас" [ref=f11e171] [cursor=pointer]:
+              - /url: tel:+79785230145
+            - link "Проложить маршрут" [ref=f11e172] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+        - generic [ref=f11e174]:
+          - generic [ref=f11e175]: ул. Калинина, 11
+          - generic [ref=f11e176]: ДЖАНКОЙ
+          - generic [ref=f11e177]: Республика Крым
+  - contentinfo [ref=f11e178]:
+    - generic [ref=f11e179]:
+      - generic [ref=f11e180]: Здрасьте,гости
+      - generic [ref=f11e181]:
+        - generic [ref=f11e182]:
+          - heading "Контакты" [level=3] [ref=f11e183]
+          - paragraph [ref=f11e184]:
+            - link "+7 978 523-01-45" [ref=f11e185] [cursor=pointer]:
+              - /url: tel:+79785230145
+          - paragraph [ref=f11e186]: ул. Калинина, 11, Джанкой,1 этаж, Республика Крым
+        - generic [ref=f11e187]:
+          - heading "Часы" [level=3] [ref=f11e188]
+          - paragraph [ref=f11e189]: "Завтраки: 9:00–12:00"
+          - paragraph [ref=f11e190]: Доставка и навынос — ежедневно
+        - generic [ref=f11e191]:
+          - heading "На карте" [level=3] [ref=f11e192]
+          - paragraph [ref=f11e193]:
+            - link "Яндекс.Карты →" [ref=f11e194] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+    - generic [ref=f11e195]:
+      - generic [ref=f11e196]: © 2026 «Здрасьте, гости»
+      - generic [ref=f11e197]: Хорошее место 2026
