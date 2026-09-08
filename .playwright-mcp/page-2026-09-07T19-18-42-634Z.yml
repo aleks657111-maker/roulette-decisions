@@ -1,0 +1,140 @@
+- generic [active] [ref=f3e1]:
+  - link "Перейти к содержанию" [ref=f3e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - link "Здрасьте, гости — на главную" [ref=f3e5] [cursor=pointer]:
+        - /url: "#top"
+        - img "Здрасьте, гости — семейное кафе" [ref=f3e6]
+      - navigation "Основная навигация" [ref=f3e7]:
+        - link "Меню" [ref=f3e8] [cursor=pointer]:
+          - /url: menu.html
+        - link "Отзывы" [ref=f3e9] [cursor=pointer]:
+          - /url: "#trust"
+        - link "Удобства" [ref=f3e10] [cursor=pointer]:
+          - /url: "#amenities"
+        - link "Контакты" [ref=f3e11] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=f3e12]:
+        - link "На карте" [ref=f3e13] [cursor=pointer]:
+          - /url: "#contact"
+        - 'link "Позвонить: +7 978 523-01-45" [ref=f3e14] [cursor=pointer]':
+          - /url: tel:+79785230145
+          - generic [aria-hidden] [ref=f3e17]: +7 978 523-01-45
+  - main [ref=f3e18]:
+    - region "Главный экран" [ref=f3e19]:
+      - generic [ref=f3e20]:
+        - link "Рейтинг 5,0, 213 оценок — смотреть на Яндекс.Картах" [ref=f3e21] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+          - generic [ref=f3e22]: ★★★★★
+          - generic [ref=f3e23]: 5,0
+          - generic [ref=f3e24]: 213 оценок
+        - heading "ЗДРАСЬТЕ, ГОСТИ" [level=1] [ref=f3e25]:
+          - generic [ref=f3e26]: ЗДРАСЬТЕ,
+          - generic [ref=f3e27]: ГОСТИ
+        - generic [ref=f3e28]:
+          - link "152 отзыва — читать на Яндекс.Картах" [ref=f3e29] [cursor=pointer]:
+            - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+            - generic [ref=f3e30]: "152"
+            - generic [ref=f3e31]: живых отзыва
+          - paragraph [ref=f3e32]: "Кафе в Джанкое, куда возвращаются: тёплый приём и полноценная домашняя кухня каждый день. Открыты ежедневно с 8:00 до 21:00."
+          - generic [ref=f3e33]:
+            - link "Позвонить и забронировать" [ref=f3e34] [cursor=pointer]:
+              - /url: tel:+79785230145
+            - link "Смотреть меню" [ref=f3e35] [cursor=pointer]:
+              - /url: menu.html
+          - link "ул. Калинина, 11, Джанкой, 1 этаж, Республика Крым" [ref=f3e36] [cursor=pointer]:
+            - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+    - region "Репутация" [ref=f3e39]:
+      - generic [ref=f3e40]:
+        - generic [ref=f3e41]:
+          - generic [ref=f3e43]:
+            - text: Хорошееместо
+            - strong [ref=f3e46]: "2026"
+          - paragraph [ref=f3e47]: Награда сервиса Яндекс.Карты за стабильно высокие оценки гостей «Здрасьте, гости» третий сезон подряд.
+        - generic [ref=f3e48]:
+          - generic [ref=f3e49]:
+            - generic [ref=f3e50]:
+              - text: "96"
+              - emphasis [ref=f3e51]: "%"
+            - generic [ref=f3e52]: довольны едой
+          - generic [ref=f3e53]:
+            - generic [ref=f3e54]:
+              - text: "99"
+              - emphasis [ref=f3e55]: "%"
+            - generic [ref=f3e56]: хвалят атмосферу
+          - generic [ref=f3e57]:
+            - generic [ref=f3e58]:
+              - text: "94"
+              - emphasis [ref=f3e59]: "%"
+            - generic [ref=f3e60]: отмечают интерьер
+        - paragraph [ref=f3e61]: "Для нас «Здрасьте, гости» — это не просто кафе, а место, где собирается вся семья: с детьми, бабушками и самыми вкусными разговорами за столом."
+    - region "Удобства" [ref=f3e62]:
+      - generic [ref=f3e63]:
+        - heading "Продумано для гостей" [level=2] [ref=f3e64]
+        - list [ref=f3e65]:
+          - listitem [ref=f3e66]: Доставка и навынос
+          - listitem [ref=f3e70]: Парковка у входа
+          - listitem [ref=f3e74]: Wi-Fi для гостей
+          - listitem [ref=f3e78]: Кофе с собой
+          - listitem [ref=f3e82]: Карта и наличные
+          - listitem [ref=f3e85]: Детская комната
+          - listitem [ref=f3e89]: Доступно для колясок
+          - listitem [ref=f3e94]: Живая музыка
+        - paragraph [ref=f3e99]: С собой на территорию заведения животных приносить нельзя — заботимся о комфорте всех гостей.
+    - region "Контакты" [ref=f3e100]:
+      - generic [ref=f3e101]:
+        - generic [ref=f3e102]:
+          - heading "Ждём в гости" [level=2] [ref=f3e103]
+          - generic [ref=f3e104]:
+            - generic [ref=f3e105]:
+              - term [ref=f3e106]: Адрес
+              - definition [ref=f3e107]: ул. Калинина, 11, Джанкой, 1 этаж, Республика Крым
+            - generic [ref=f3e108]:
+              - term [ref=f3e109]: Телефон
+              - definition [ref=f3e110]:
+                - link "+7 978 523-01-45" [ref=f3e111] [cursor=pointer]:
+                  - /url: tel:+79785230145
+            - generic [ref=f3e112]:
+              - term [ref=f3e113]: Часы работы
+              - definition [ref=f3e114]: ежедневно 8:00–21:00
+            - generic [ref=f3e115]:
+              - term [ref=f3e116]: Завтраки
+              - definition [ref=f3e117]: 9:00–12:00
+            - generic [ref=f3e118]:
+              - term [ref=f3e119]: Рейтинг
+              - definition [ref=f3e120]:
+                - text: 5,0 · 213 оценок · 152 отзыва на
+                - link "Яндекс.Картах" [ref=f3e121] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+          - generic [ref=f3e122]:
+            - link "Позвонить сейчас" [ref=f3e123] [cursor=pointer]:
+              - /url: tel:+79785230145
+            - link "Проложить маршрут" [ref=f3e124] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+        - generic [ref=f3e126]:
+          - generic [ref=f3e127]: ул. Калинина, 11
+          - generic [ref=f3e128]: ДЖАНКОЙ
+          - generic [ref=f3e129]: Республика Крым
+  - contentinfo [ref=f3e130]:
+    - generic [ref=f3e131]:
+      - generic [ref=f3e132]: Здрасьте,гости
+      - generic [ref=f3e133]:
+        - generic [ref=f3e134]:
+          - heading "Контакты" [level=3] [ref=f3e135]
+          - paragraph [ref=f3e136]:
+            - link "+7 978 523-01-45" [ref=f3e137] [cursor=pointer]:
+              - /url: tel:+79785230145
+          - paragraph [ref=f3e138]: ул. Калинина, 11, Джанкой,1 этаж, Республика Крым
+        - generic [ref=f3e139]:
+          - heading "Часы" [level=3] [ref=f3e140]
+          - paragraph [ref=f3e141]: Ежедневно 8:00–21:00
+          - paragraph [ref=f3e142]: "Завтраки: 9:00–12:00"
+        - generic [ref=f3e143]:
+          - heading "На карте" [level=3] [ref=f3e144]
+          - paragraph [ref=f3e145]:
+            - link "Яндекс.Карты →" [ref=f3e146] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+    - generic [ref=f3e147]:
+      - generic [ref=f3e148]: © 2026 «Здрасьте, гости»
+      - generic [ref=f3e149]: Хорошее место 2026

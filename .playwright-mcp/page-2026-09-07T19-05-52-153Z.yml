@@ -1,0 +1,16 @@
+- generic [ref=e11]:
+  - generic [ref=e13]:
+    - link [ref=e15] [cursor=pointer]:
+      - /url: /zdrastegosti.cafee/
+      - img "Фото профиля zdrastegosti.cafee" [ref=e16]
+    - generic [ref=e17]:
+      - generic [ref=e19]: Смотреть другие актуальные истории
+      - generic [ref=e21]: Зарегистрируйтесь, чтобы увидеть больше актуальных историй от zdrastegosti.cafee.
+      - link "Зарегистрироваться" [ref=e24] [cursor=pointer]:
+        - /url: /accounts/emailsignup/?next=%2Fstories%2Fhighlights%2F18022820651820277%2F
+      - button "Войти" [ref=e26] [cursor=pointer]
+  - link [ref=e28] [cursor=pointer]:
+    - /url: /
+    - img "Instagram" [ref=e29]
+  - button [ref=e38] [cursor=pointer]:
+    - img "Закрыть" [ref=e40]

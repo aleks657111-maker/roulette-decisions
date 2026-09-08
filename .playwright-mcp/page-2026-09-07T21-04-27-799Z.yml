@@ -1,0 +1,789 @@
+- generic [active] [ref=f5e1]:
+  - link "Перейти к содержанию" [ref=f5e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - link "Здрасьте, гости — на главную" [ref=f5e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Здрасьте, гости — семейное кафе" [ref=f5e6]
+      - 'link "Позвонить: +7 978 523-01-45" [ref=f5e8] [cursor=pointer]':
+        - /url: tel:+79785230145
+        - generic [aria-hidden] [ref=f5e11]: +7 978 523-01-45
+      - button "Открыть меню" [ref=f5e12] [cursor=pointer]
+  - main [ref=f5e16]:
+    - generic [ref=f5e18]:
+      - link "← На главную" [ref=f5e19] [cursor=pointer]:
+        - /url: index.html
+      - heading "Меню хорошего настроения" [level=1] [ref=f5e20]: Меню хорошегонастроения
+      - paragraph [ref=f5e21]:
+        - text: Встречаем с улыбкой, готовим с любовью! Бронь и предзаказ —
+        - link "+7 978 523 01 45" [ref=f5e22] [cursor=pointer]:
+          - /url: tel:+79785230145
+    - navigation "Разделы меню" [ref=f5e23]:
+      - generic [ref=f5e24]:
+        - link "Завтраки" [ref=f5e25] [cursor=pointer]:
+          - /url: "#breakfast"
+        - link "Блины" [ref=f5e26] [cursor=pointer]:
+          - /url: "#pancakes"
+        - link "Первые блюда" [ref=f5e27] [cursor=pointer]:
+          - /url: "#soups"
+        - link "Салаты" [ref=f5e28] [cursor=pointer]:
+          - /url: "#salads"
+        - link "Холодные закуски" [ref=f5e29] [cursor=pointer]:
+          - /url: "#cold-snacks"
+        - link "Горячие закуски" [ref=f5e30] [cursor=pointer]:
+          - /url: "#hot-snacks"
+        - link "Вторые блюда" [ref=f5e31] [cursor=pointer]:
+          - /url: "#mains"
+        - link "Пасты" [ref=f5e32] [cursor=pointer]:
+          - /url: "#pasta"
+        - link "Пицца" [ref=f5e33] [cursor=pointer]:
+          - /url: "#pizza"
+        - link "Сладкая пицца" [ref=f5e34] [cursor=pointer]:
+          - /url: "#sweet-pizza"
+        - link "Гарниры" [ref=f5e35] [cursor=pointer]:
+          - /url: "#sides"
+        - link "Детское меню" [ref=f5e36] [cursor=pointer]:
+          - /url: "#kids"
+    - generic [ref=f5e38]:
+      - generic [ref=f5e39]:
+        - generic [ref=f5e40]:
+          - text: Завтраки
+          - generic [ref=f5e41]: с 9:00 до 12:00
+        - list [ref=f5e42]:
+          - listitem [ref=f5e43]:
+            - generic [ref=f5e44]:
+              - generic [ref=f5e45]:
+                - text: Омлет с лососем и икрой тобико
+                - emphasis [ref=f5e46]: Новинка
+              - generic [ref=f5e48]: 530 руб.
+            - generic [ref=f5e49]:
+              - paragraph [ref=f5e50]: яйца кур, молоко, лосось с/с, лук зеленый, кунжут, икра тобико
+              - generic [ref=f5e51]: 200 г
+          - listitem [ref=f5e52]:
+            - generic [ref=f5e53]:
+              - generic [ref=f5e54]:
+                - text: Омлет с томленой говядиной
+                - emphasis [ref=f5e55]: Новинка
+              - generic [ref=f5e57]: 430 руб.
+            - generic [ref=f5e58]:
+              - paragraph [ref=f5e59]: яйца кур, молоко, томленая говядина, лук зеленый
+              - generic [ref=f5e60]: 200 г
+          - listitem [ref=f5e61]:
+            - generic [ref=f5e62]:
+              - generic [ref=f5e63]: Шакшука с говяжьим фаршем и чиабаттой
+              - generic [ref=f5e65]: 460 руб.
+            - generic [ref=f5e66]:
+              - paragraph [ref=f5e67]: яйцо куриное, фарш говяжий, лук ялтинский, перец болгарский, помидор свежий, соус томатный, перчик халапеньо, кукуруза консерв., зелень
+              - generic [ref=f5e68]: 400 г
+          - listitem [ref=f5e69]:
+            - generic [ref=f5e70]:
+              - generic [ref=f5e71]: Сырники с конфитюром и сметаной
+              - generic [ref=f5e73]: 380 руб.
+            - paragraph [ref=f5e75]: 3 шт, в меню до 21:30
+          - listitem [ref=f5e76]:
+            - generic [ref=f5e77]:
+              - generic [ref=f5e78]: Американский завтрак
+              - generic [ref=f5e80]: 590 руб.
+            - generic [ref=f5e81]:
+              - paragraph [ref=f5e82]: глазунья из 2-х яиц, бекон, чиабатта, фри, колбаски говяжьи, кукуруза консерв., огурец маринованный, кетчуп
+              - generic [ref=f5e83]: 430 г
+          - listitem [ref=f5e84]:
+            - generic [ref=f5e85]:
+              - generic [ref=f5e86]:
+                - text: Сырные вафли с креветкой под сливочно-икорным соусом
+                - emphasis [ref=f5e87]: Новинка
+              - generic [ref=f5e89]: 520 руб.
+            - generic [ref=f5e90]:
+              - paragraph [ref=f5e91]: сырные вафли, шпинат, кабачок, яйцо кур., сливочно-икорный соус
+              - generic [ref=f5e92]: 320 г
+          - listitem [ref=f5e93]:
+            - generic [ref=f5e94]:
+              - generic [ref=f5e95]: Картофельные вафли со слабосоленым лососем и яйцом пашот
+              - generic [ref=f5e97]: 480 руб.
+            - generic [ref=f5e98]:
+              - paragraph [ref=f5e99]: картофельные вафли, с/с лосось, огурец свежий, сливочно-сырный соус, яйцо
+              - generic [ref=f5e100]: 320 г
+          - listitem [ref=f5e101]:
+            - generic [ref=f5e102]:
+              - generic [ref=f5e103]:
+                - text: Панкейки с медом и грецкими орехами
+                - emphasis [ref=f5e104]: Новинка
+              - generic [ref=f5e106]: 380 руб.
+            - generic [ref=f5e107]:
+              - paragraph
+              - generic [ref=f5e108]: 190 г
+      - generic [ref=f5e109]:
+        - generic [ref=f5e110]:
+          - text: Блины
+          - generic [ref=f5e111]: до 21:30
+        - list [ref=f5e112]:
+          - listitem [ref=f5e113]:
+            - generic [ref=f5e114]:
+              - generic [ref=f5e115]: С апельсином и мороженым (3 шт.)
+              - generic [ref=f5e117]: 420 руб.
+            - generic [ref=f5e118]:
+              - paragraph
+              - generic [ref=f5e119]: 320 г
+          - listitem [ref=f5e120]:
+            - generic [ref=f5e121]:
+              - generic [ref=f5e122]: С курицей и грибами (3 шт.)
+              - generic [ref=f5e124]: 420 руб.
+            - generic [ref=f5e125]:
+              - paragraph
+              - generic [ref=f5e126]: 300 г
+          - listitem [ref=f5e127]:
+            - generic [ref=f5e128]:
+              - generic [ref=f5e129]: С лососем и шпинатом (3 шт.)
+              - generic [ref=f5e131]: 530 руб.
+            - generic [ref=f5e132]:
+              - paragraph
+              - generic [ref=f5e133]: 310 г
+          - listitem [ref=f5e134]:
+            - generic [ref=f5e135]:
+              - generic [ref=f5e136]: С карамелизированным яблоком (3 шт.)
+              - generic [ref=f5e138]: 380 руб.
+            - generic [ref=f5e139]:
+              - paragraph
+              - generic [ref=f5e140]: 260 г
+          - listitem [ref=f5e141]:
+            - generic [ref=f5e142]:
+              - generic [ref=f5e143]: С бананом, нутеллой и шариком мороженого (2 шт.)
+              - generic [ref=f5e145]: 430 руб.
+            - generic [ref=f5e146]:
+              - paragraph
+              - generic [ref=f5e147]: 270 г
+          - listitem [ref=f5e148]:
+            - generic [ref=f5e149]:
+              - generic [ref=f5e150]: С вишней и творожным сыром (3 шт.)
+              - generic [ref=f5e152]: 480 руб.
+            - generic [ref=f5e153]:
+              - paragraph
+              - generic [ref=f5e154]: 350 г
+          - listitem [ref=f5e155]:
+            - generic [ref=f5e156]:
+              - generic [ref=f5e157]: Со слабосоленым лососем и творожным сыром (2 шт.)
+              - generic [ref=f5e159]: 590 руб.
+            - generic [ref=f5e160]:
+              - paragraph
+              - generic [ref=f5e161]: 260 г
+          - listitem [ref=f5e162]:
+            - generic [ref=f5e163]:
+              - generic [ref=f5e164]: Со сметаной и сгущенкой (3 шт.)
+              - generic [ref=f5e166]: 280 руб.
+            - generic [ref=f5e167]:
+              - paragraph
+              - generic [ref=f5e168]: 260 г
+        - paragraph [ref=f5e169]: Дорогие гости, убедительная просьба при наличии какой-либо пищевой аллергии сообщить официанту. Заранее спасибо!
+      - generic [ref=f5e170]:
+        - generic [ref=f5e171]: Первые блюда
+        - list [ref=f5e172]:
+          - listitem [ref=f5e173]:
+            - generic [ref=f5e174]:
+              - generic [ref=f5e175]: Борщик, как у мамы
+              - generic [ref=f5e177]: 450 руб.
+            - generic [ref=f5e178]:
+              - paragraph [ref=f5e179]: подается с салом, бородинским хлебом, сметаной и зеленым луком
+              - generic [ref=f5e180]: 350 г
+          - listitem [ref=f5e181]:
+            - generic [ref=f5e182]:
+              - generic [ref=f5e183]: Солянка
+              - generic [ref=f5e185]: 490 руб.
+            - generic [ref=f5e186]:
+              - paragraph [ref=f5e187]: подается с бородинским хлебом и сметаной
+              - generic [ref=f5e188]: 370/30 г
+          - listitem [ref=f5e189]:
+            - generic [ref=f5e190]:
+              - generic [ref=f5e191]: Куриный супчик
+              - generic [ref=f5e193]: 320 руб.
+            - generic [ref=f5e194]:
+              - paragraph [ref=f5e195]: с лапшой и перепелиным яйцом
+              - generic [ref=f5e196]: 350 г
+          - listitem [ref=f5e197]:
+            - generic [ref=f5e198]:
+              - generic [ref=f5e199]: Авторский «Том-ям» с фунчозой
+              - generic [ref=f5e201]: 590 руб.
+            - generic [ref=f5e202]:
+              - paragraph
+              - generic [ref=f5e203]: 370 г
+          - listitem [ref=f5e204]:
+            - generic [ref=f5e205]:
+              - generic [ref=f5e206]: Сырный суп с беконом
+              - generic [ref=f5e208]: 420 руб.
+            - generic [ref=f5e209]:
+              - paragraph
+              - generic [ref=f5e210]: 350 г
+          - listitem [ref=f5e211]:
+            - generic [ref=f5e212]:
+              - generic [ref=f5e213]: Рамен с говядиной
+              - generic [ref=f5e215]: 490 руб.
+            - generic [ref=f5e216]:
+              - paragraph
+              - generic [ref=f5e217]: 350 г
+      - generic [ref=f5e218]:
+        - generic [ref=f5e219]: Салаты
+        - list [ref=f5e220]:
+          - listitem [ref=f5e221]:
+            - generic [ref=f5e222]:
+              - generic [ref=f5e223]:
+                - text: Овощной салат аля греческий
+                - emphasis [ref=f5e224]: Новинка
+              - generic [ref=f5e226]: 490 руб.
+            - generic [ref=f5e227]:
+              - paragraph [ref=f5e228]: микс салата, помидоры черри, огурец свежий, двойной сыр, перец болгарский, редис, маслины, соус лимонный
+              - generic [ref=f5e229]: 200 г
+          - listitem [ref=f5e230]:
+            - generic [ref=f5e231]:
+              - generic [ref=f5e232]:
+                - text: Салат с тунцом
+                - emphasis [ref=f5e233]: Новинка
+              - generic [ref=f5e235]: 620 руб.
+            - generic [ref=f5e236]:
+              - paragraph [ref=f5e237]: микс салата, тунец консерв., помидор черри, лук ялтинский, картофель бэби, маслины, огурец свежий, редис, эспума, соус медово-горчичный
+              - generic [ref=f5e238]: 270 г
+          - listitem [ref=f5e239]:
+            - generic [ref=f5e240]:
+              - generic [ref=f5e241]:
+                - text: Салат с говяжьим языком
+                - emphasis [ref=f5e242]: Новинка
+              - generic [ref=f5e244]: 670 руб.
+            - generic [ref=f5e245]:
+              - paragraph [ref=f5e246]: микс салата, огурец свежий, помидор черри, перец болгарский, язык говяжий, ореховый соус, соевый соус, кунжут
+              - generic [ref=f5e247]: 215 г
+          - listitem [ref=f5e248]:
+            - generic [ref=f5e249]:
+              - generic [ref=f5e250]: Цезарь с лососем
+              - generic [ref=f5e252]: 730 руб.
+            - generic [ref=f5e253]:
+              - paragraph [ref=f5e254]: лосось с/с, айсберг, микс салата, помидор черри, пармезан, перепелиное яйцо, соус «цезарь», эспума, крипсы
+              - generic [ref=f5e255]: 210 г
+          - listitem [ref=f5e256]:
+            - generic [ref=f5e257]:
+              - generic [ref=f5e258]: Цезарь с креветкой
+              - generic [ref=f5e260]: 710 руб.
+            - generic [ref=f5e261]:
+              - paragraph [ref=f5e262]: креветка тигровая, айсберг, микс салата, помидор черри, пармезан, соус «цезарь», эспума, крипсы
+              - generic [ref=f5e263]: 240 г
+          - listitem [ref=f5e264]:
+            - generic [ref=f5e265]:
+              - generic [ref=f5e266]: Цезарь с курицей и беконом
+              - generic [ref=f5e268]: 590 руб.
+            - generic [ref=f5e269]:
+              - paragraph [ref=f5e270]: филе куриное, бекон, айсберг, микс салата, помидор черри, перепелиное яйцо, пармезан, соус «цезарь», эспума, крипсы
+              - generic [ref=f5e271]: 240 г
+          - listitem [ref=f5e272]:
+            - generic [ref=f5e273]:
+              - generic [ref=f5e274]: С томленой телятиной и жареными овощами
+              - generic [ref=f5e276]: 620 руб.
+            - generic [ref=f5e277]:
+              - paragraph [ref=f5e278]: микс салата, томленая телятина, баклажан, кабачок, перец болгарский, картофель бэби, помидор черри, соус бальзамик
+              - generic [ref=f5e279]: 230 г
+          - listitem [ref=f5e280]:
+            - generic [ref=f5e281]:
+              - generic [ref=f5e282]: Салат «По-деревенски»
+              - generic [ref=f5e284]: 570 руб.
+            - generic [ref=f5e285]:
+              - paragraph [ref=f5e286]: охотничьи колбаски, картофель бэби фри, микс салата, помидор черри, яйцо куриное, перепелиное, лук ялтинский, огурцы маринованные, соус медово-горчичный
+              - generic [ref=f5e287]: 350 г
+          - listitem [ref=f5e288]:
+            - generic [ref=f5e289]:
+              - generic [ref=f5e290]: С креветкой, хрустящим баклажаном и двойным сыром
+              - generic [ref=f5e292]: 720 руб.
+            - generic [ref=f5e293]:
+              - paragraph [ref=f5e294]: микс салата, помидор черри, хрустящий баклажан, тигровые креветки, двойной сыр, соус медово-горчичный, кунжут
+              - generic [ref=f5e295]: 350 г
+          - listitem [ref=f5e296]:
+            - generic [ref=f5e297]:
+              - generic [ref=f5e298]: Салат из морепродуктов
+              - generic [ref=f5e300]: 750 руб.
+            - generic [ref=f5e301]:
+              - paragraph [ref=f5e302]: кальмары, мидии, креветки, свежий огурец, помидор черри, лук ялтинский, соус сливочно-сырный, микс салата
+              - generic [ref=f5e303]: 270 г
+      - generic [ref=f5e304]:
+        - generic [ref=f5e305]: Холодные закуски
+        - list [ref=f5e306]:
+          - listitem [ref=f5e307]:
+            - generic [ref=f5e308]:
+              - generic [ref=f5e309]: Брускетта с телятиной
+              - generic [ref=f5e311]: 390 руб.
+            - generic [ref=f5e312]:
+              - paragraph [ref=f5e313]: чиабатта, томленая телятина, микс салата, соус медово-горчичный, вяленые томаты
+              - generic [ref=f5e314]: 1 шт
+          - listitem [ref=f5e315]:
+            - generic [ref=f5e316]:
+              - generic [ref=f5e317]: Брускетта с лососем и двойным сыром
+              - generic [ref=f5e319]: 390 руб.
+            - generic [ref=f5e320]:
+              - paragraph [ref=f5e321]: чиабатта, лосось с/с, двойной сыр, помидор черри
+              - generic [ref=f5e322]: 1 шт
+          - listitem [ref=f5e323]:
+            - generic [ref=f5e324]:
+              - generic [ref=f5e325]: Брускетта с креветками и помидором конкассе
+              - generic [ref=f5e327]: 390 руб.
+            - generic [ref=f5e328]:
+              - paragraph [ref=f5e329]: чиабатта, креветка тигровая, томаты конкассе, микс салата, двойной сыр
+              - generic [ref=f5e330]: 1 шт
+          - listitem [ref=f5e331]:
+            - generic [ref=f5e332]:
+              - generic [ref=f5e333]:
+                - text: Мусс из копченого лосося с тартаром из огурца
+                - emphasis [ref=f5e334]: Новинка
+              - generic [ref=f5e336]: 650 руб.
+            - generic [ref=f5e337]:
+              - paragraph [ref=f5e338]: копченый лосось, сливки, рикотта, свежий огурец, чиабатта
+              - generic [ref=f5e339]: 230 г
+          - listitem [ref=f5e340]:
+            - generic [ref=f5e341]:
+              - generic [ref=f5e342]: Сырный сет
+              - generic [ref=f5e344]: 750 руб.
+            - generic [ref=f5e345]:
+              - paragraph [ref=f5e346]: дорблю, чеддер, моцарелла, пармезан, мед, грецкие орехи
+              - generic [ref=f5e347]: 260 г
+      - generic [ref=f5e348]:
+        - generic [ref=f5e349]: Горячие закуски
+        - list [ref=f5e350]:
+          - listitem [ref=f5e351]:
+            - generic [ref=f5e352]:
+              - generic [ref=f5e353]: Чиабатта с курицей и беконом
+              - generic [ref=f5e355]: 460 руб.
+            - generic [ref=f5e356]:
+              - paragraph [ref=f5e357]: чиабатта, филе куриное, бекон, айсберг, огурец маринованный, помидор свежий, лук ялтинский, соус «цезарь»
+              - generic [ref=f5e358]: 400 г
+          - listitem [ref=f5e359]:
+            - generic [ref=f5e360]:
+              - generic [ref=f5e361]: Чиабатта со слабосол. лососем и двойным сыром
+              - generic [ref=f5e363]: 580 руб.
+            - generic [ref=f5e364]:
+              - paragraph [ref=f5e365]: чиабатта, лосось с/с, двойной сыр, микс салата, огурец свежий, помидор свежий
+              - generic [ref=f5e366]: 400 г
+          - listitem [ref=f5e367]:
+            - generic [ref=f5e368]:
+              - generic [ref=f5e369]: Чиабатта с говядиной
+              - generic [ref=f5e371]: 490 руб.
+            - generic [ref=f5e372]:
+              - paragraph [ref=f5e373]: чиабатта, фарш говяжий, огурец маринованный, микс салата, лук ялтинский, помидор свежий, сыр чеддер, соус медово-горчичный
+              - generic [ref=f5e374]: 400 г
+          - listitem [ref=f5e375]:
+            - generic [ref=f5e376]:
+              - generic [ref=f5e377]:
+                - text: Сырный пирог с беконом
+                - emphasis [ref=f5e378]: Новинка
+              - generic [ref=f5e380]: 590 руб.
+            - generic [ref=f5e381]:
+              - paragraph
+              - generic [ref=f5e382]: 530 г
+          - listitem [ref=f5e383]:
+            - generic [ref=f5e384]:
+              - generic [ref=f5e385]:
+                - text: Хрустящие шампиньоны в соусе сладкий чили
+                - emphasis [ref=f5e386]: Новинка
+              - generic [ref=f5e388]: 490 руб.
+            - generic [ref=f5e389]:
+              - paragraph [ref=f5e390]: подается с салатиком из помидоров черри
+              - generic [ref=f5e391]: 270 г
+          - listitem [ref=f5e392]:
+            - generic [ref=f5e393]:
+              - generic [ref=f5e394]: Тосты со слабосоленым лососем
+              - generic [ref=f5e396]: 560 руб.
+            - generic [ref=f5e397]:
+              - paragraph [ref=f5e398]: хлеб тостерный, лосось с/с, домашний майонез, икра тобико, соус унаги, кунжут
+              - generic [ref=f5e399]: 200 г
+          - listitem [ref=f5e400]:
+            - generic [ref=f5e401]:
+              - generic [ref=f5e402]: Куриные крылья в медово-горчичном соусе
+              - generic [ref=f5e404]: 620 руб.
+            - generic [ref=f5e405]:
+              - paragraph [ref=f5e406]: подаются с соусами «цезарь» и «BBQ»
+              - generic [ref=f5e407]: 450 г
+          - listitem [ref=f5e408]:
+            - generic [ref=f5e409]:
+              - generic [ref=f5e410]:
+                - text: Соте из морепродуктов с овощами в сливочном соусе
+                - emphasis [ref=f5e411]: Новинка
+              - generic [ref=f5e413]: 910 руб.
+            - generic [ref=f5e414]:
+              - paragraph [ref=f5e415]: мидии в створке, кальмары, креветка, сливки, перец болгарский, кабачок, картофель бэби, чиабатта
+              - generic [ref=f5e416]: 430 г
+          - listitem [ref=f5e417]:
+            - generic [ref=f5e418]:
+              - generic [ref=f5e419]: Моцарелла фри с ягодным конфитюром
+              - generic [ref=f5e421]: 370 руб.
+            - generic [ref=f5e422]:
+              - paragraph
+              - generic [ref=f5e423]: 150/40 г
+      - generic [ref=f5e424]:
+        - generic [ref=f5e425]: Вторые блюда
+        - list [ref=f5e426]:
+          - listitem [ref=f5e427]:
+            - generic [ref=f5e428]:
+              - generic [ref=f5e429]: Стейк из свиного ошейка с картофелем «По-деревенски»
+              - generic [ref=f5e431]: 830 руб.
+            - generic [ref=f5e432]:
+              - paragraph [ref=f5e433]: подается с соусом «BBQ»
+              - generic [ref=f5e434]: 450/40 г
+          - listitem [ref=f5e435]:
+            - generic [ref=f5e436]:
+              - generic [ref=f5e437]: Томленые свиные ребра BBQ
+              - generic [ref=f5e439]: 740 руб.
+            - generic [ref=f5e440]:
+              - paragraph [ref=f5e441]: подаются с перчиком халапеньо, ялтинским луком и маринованным огурчиком
+              - generic [ref=f5e442]: 400/40 г
+          - listitem [ref=f5e443]:
+            - generic [ref=f5e444]:
+              - generic [ref=f5e445]: Свиные медальоны в беконе
+              - generic [ref=f5e447]: 730 руб.
+            - generic [ref=f5e448]:
+              - paragraph [ref=f5e449]: подается с грибным соусом и картофельными дольками
+              - generic [ref=f5e450]: 450/40 г
+          - listitem [ref=f5e451]:
+            - generic [ref=f5e452]:
+              - generic [ref=f5e453]: Куриные рулетики с беконом
+              - generic [ref=f5e455]: 580 руб.
+            - generic [ref=f5e456]:
+              - paragraph [ref=f5e457]: подается с запеченными томатами и соусом «BBQ»
+              - generic [ref=f5e458]: 230 г
+          - listitem [ref=f5e459]:
+            - generic [ref=f5e460]:
+              - generic [ref=f5e461]:
+                - text: Жареный картофель с грибами и яйцом пашот
+                - emphasis [ref=f5e462]: Новинка
+              - generic [ref=f5e464]: 420 руб.
+            - generic [ref=f5e465]:
+              - paragraph [ref=f5e466]: картофель, шампиньоны, яйцо, помидоры конкассе и сметано-чесночный соус
+              - generic [ref=f5e467]: 410 г
+          - listitem [ref=f5e468]:
+            - generic [ref=f5e469]:
+              - generic [ref=f5e470]: Баклажан по-сицилийски
+              - generic [ref=f5e472]: 690 руб.
+            - generic [ref=f5e473]:
+              - paragraph [ref=f5e474]: баклажан, помидор конкассе, лук репчатый, чеснок, фарш говяжий, сыр моцарелла, соус «песто»
+              - generic [ref=f5e475]: 310 г
+          - listitem [ref=f5e476]:
+            - generic [ref=f5e477]:
+              - generic [ref=f5e478]:
+                - text: Куриное филе в остро-сладком соусе с арахисом
+                - emphasis [ref=f5e479]: Новинка
+              - generic [ref=f5e481]: 650 руб.
+            - generic [ref=f5e482]:
+              - paragraph [ref=f5e483]: подается с салатиком из овощей
+              - generic [ref=f5e484]: 370 г
+          - listitem [ref=f5e485]:
+            - generic [ref=f5e486]:
+              - generic [ref=f5e487]:
+                - text: Ризотто с морепродуктами
+                - emphasis [ref=f5e488]: Новинка
+              - generic [ref=f5e490]: 650 руб.
+            - generic [ref=f5e491]:
+              - paragraph [ref=f5e492]: рис арборио, лук репчатый, сливки, чеснок, мидии, кальмар, креветка, пармезан
+              - generic [ref=f5e493]: 300 г
+          - listitem [ref=f5e494]:
+            - generic [ref=f5e495]:
+              - generic [ref=f5e496]: Венский шницель с картофельным пюре и грибным жульеном
+              - generic [ref=f5e498]: 680 руб.
+            - generic [ref=f5e499]:
+              - paragraph [ref=f5e500]: куриное филе, сухари «Панко», картофельное пюре, шампиньоны, сливки, лук репчатый
+              - generic [ref=f5e501]: 420 г
+          - listitem [ref=f5e502]:
+            - generic [ref=f5e503]:
+              - generic [ref=f5e504]: Куриная грудка, фаршированная адыгейским сыром и помидорами
+              - generic [ref=f5e506]: 680 руб.
+            - generic [ref=f5e507]:
+              - paragraph [ref=f5e508]: подается с кускусом и сливочно-сырным соусом
+              - generic [ref=f5e509]: 440/50 г
+          - listitem [ref=f5e510]:
+            - generic [ref=f5e511]:
+              - generic [ref=f5e512]: Запеченный лосось на подушке из стручковой фасоли
+              - generic [ref=f5e514]: 1300 руб.
+            - generic [ref=f5e515]:
+              - paragraph [ref=f5e516]: под сливочно-сырным соусом
+              - generic [ref=f5e517]: 300 г
+      - generic [ref=f5e518]:
+        - generic [ref=f5e519]: Пасты
+        - list [ref=f5e520]:
+          - listitem [ref=f5e521]:
+            - generic [ref=f5e522]:
+              - generic [ref=f5e523]: Спагетти «Болоньезе»
+              - generic [ref=f5e525]: 570 руб.
+            - generic [ref=f5e526]:
+              - paragraph [ref=f5e527]: говяжий фарш, соус томатный, перец болгарский, помидор черри, лук репчатый, чеснок
+              - generic [ref=f5e528]: 320 г
+          - listitem [ref=f5e529]:
+            - generic [ref=f5e530]:
+              - generic [ref=f5e531]: Спагетти «Карбонара»
+              - generic [ref=f5e533]: 540 руб.
+            - generic [ref=f5e534]:
+              - paragraph [ref=f5e535]: сливочный соус, бекон, лук репчатый, чеснок, яичный желток, пармезан
+              - generic [ref=f5e536]: 280 г
+          - listitem [ref=f5e537]:
+            - generic [ref=f5e538]:
+              - generic [ref=f5e539]: Спагетти с морепродуктами
+              - generic [ref=f5e541]: 680 руб.
+            - generic [ref=f5e542]:
+              - paragraph [ref=f5e543]: сливочный соус, кальмар, мидии, креветка, укроп, лук репчатый, чеснок, пармезан
+              - generic [ref=f5e544]: 300 г
+          - listitem [ref=f5e545]:
+            - generic [ref=f5e546]:
+              - generic [ref=f5e547]: Фарфалле с курицей и грибами
+              - generic [ref=f5e549]: 520 руб.
+            - generic [ref=f5e550]:
+              - paragraph [ref=f5e551]: куриное филе, шампиньоны, пармезан, сливочный соус
+              - generic [ref=f5e552]: 320 г
+          - listitem [ref=f5e553]:
+            - generic [ref=f5e554]:
+              - generic [ref=f5e555]:
+                - text: Ризони с говяжьим языком
+                - emphasis [ref=f5e556]: Новинка
+              - generic [ref=f5e558]: 650 руб.
+            - generic [ref=f5e559]:
+              - paragraph [ref=f5e560]: говяжий язык, лук репчатый, чеснок, сливочный соус, пармезан, помидор конкассе
+              - generic [ref=f5e561]: 310 г
+      - generic [ref=f5e562]:
+        - generic [ref=f5e563]:
+          - text: Пицца
+          - generic [ref=f5e564]: 30 см
+        - list [ref=f5e565]:
+          - listitem [ref=f5e566]:
+            - generic [ref=f5e567]:
+              - generic [ref=f5e568]: Пицца «Диабло»
+              - generic [ref=f5e570]: 545 руб.
+            - paragraph [ref=f5e572]: пепперони, перчик халапеньо, моцарелла, томатный соус
+          - listitem [ref=f5e573]:
+            - generic [ref=f5e574]:
+              - generic [ref=f5e575]: Пицца «BBQ»
+              - generic [ref=f5e577]: 645 руб.
+            - paragraph [ref=f5e579]: куриное филе, охотничьи колбаски, шампиньоны, кукуруза, моцарелла, укроп, соус «BBQ»
+          - listitem [ref=f5e580]:
+            - generic [ref=f5e581]:
+              - generic [ref=f5e582]: Пицца «4 сыра»
+              - generic [ref=f5e584]: 720 руб.
+            - paragraph [ref=f5e586]: моцарелла, сыр «бри», сыр «дор блю», сыр «пармезан», сливочный соус
+          - listitem [ref=f5e587]:
+            - generic [ref=f5e588]:
+              - generic [ref=f5e589]: Пицца «Гавайская»
+              - generic [ref=f5e591]: 645 руб.
+            - paragraph [ref=f5e593]: куриное филе, маслины, ананас консерв., моцарелла, томатный соус
+          - listitem [ref=f5e594]:
+            - generic [ref=f5e595]:
+              - generic [ref=f5e596]:
+                - text: Пицца «Мясная»
+                - emphasis [ref=f5e597]: Новинка
+              - generic [ref=f5e599]: 690 руб.
+            - paragraph [ref=f5e601]: мякоть говядины, свиная вырезка, куриное филе, лук ялтинский маринованный, моцарелла, соус «BBQ», томатный соус
+          - listitem [ref=f5e602]:
+            - generic [ref=f5e603]:
+              - generic [ref=f5e604]: Пицца «Чизбургер»
+              - generic [ref=f5e606]: 680 руб.
+            - paragraph [ref=f5e608]: фарш говяжий, лук ялтинский, огурец маринованный, помидор черри, сыр чеддер, соус «бургер», томатный соус
+          - listitem [ref=f5e609]:
+            - generic [ref=f5e610]:
+              - generic [ref=f5e611]: Пицца «Фоджа»
+              - generic [ref=f5e613]: 680 руб.
+            - paragraph [ref=f5e615]: соус «цезарь», моцарелла, бекон, пепперони, помидор черри, маслины, соус «песто»
+          - listitem [ref=f5e616]:
+            - generic [ref=f5e617]:
+              - generic [ref=f5e618]: Пицца «Карбонара»
+              - generic [ref=f5e620]: 645 руб.
+            - paragraph [ref=f5e622]: бекон, ветчина, сливочный соус, шампиньоны, пармезан, моцарелла
+          - listitem [ref=f5e623]:
+            - generic [ref=f5e624]:
+              - generic [ref=f5e625]: Пицца «Кассия»
+              - generic [ref=f5e627]: 645 руб.
+            - paragraph [ref=f5e629]: охотничьи колбаски, шампиньоны, огурцы маринованные, лук ялтинский маринованный, моцарелла, томатный соус
+          - listitem [ref=f5e630]:
+            - generic [ref=f5e631]:
+              - generic [ref=f5e632]: Пицца «Колорадо»
+              - generic [ref=f5e634]: 645 руб.
+            - paragraph [ref=f5e636]: куриное филе, шампиньоны, моцарелла, сливочный соус
+          - listitem [ref=f5e637]:
+            - generic [ref=f5e638]:
+              - generic [ref=f5e639]: Пицца «Маргарита»
+              - generic [ref=f5e641]: 450 руб.
+            - paragraph [ref=f5e643]: помидоры черри, моцарелла, томатный соус
+          - listitem [ref=f5e644]:
+            - generic [ref=f5e645]:
+              - generic [ref=f5e646]: Пицца «Морская»
+              - generic [ref=f5e648]: 790 руб.
+            - paragraph [ref=f5e650]: мидии, кальмары, креветка, помидор черри, моцарелла, укроп, томатный соус
+          - listitem [ref=f5e651]:
+            - generic [ref=f5e652]:
+              - generic [ref=f5e653]: Пицца «Норвежская»
+              - generic [ref=f5e655]: 895 руб.
+            - paragraph [ref=f5e657]: лосось с/с, сыр «дор блю», моцарелла, укроп, сливочный соус
+          - listitem [ref=f5e658]:
+            - generic [ref=f5e659]:
+              - generic [ref=f5e660]: Пицца «Римская»
+              - generic [ref=f5e662]: 645 руб.
+            - paragraph [ref=f5e664]: бекон, куриное филе, помидоры черри, кукуруза консерв., укроп, томатный соус
+          - listitem [ref=f5e665]:
+            - generic [ref=f5e666]:
+              - generic [ref=f5e667]: Пицца «Сицилия»
+              - generic [ref=f5e669]: 645 руб.
+            - paragraph [ref=f5e671]: ветчина, куриное филе, перец болгарский, маслины, томатный соус, соус «цезарь»
+          - listitem [ref=f5e672]:
+            - generic [ref=f5e673]:
+              - generic [ref=f5e674]: Пицца «Цезарь»
+              - generic [ref=f5e676]: 660 руб.
+            - paragraph [ref=f5e678]: куриное филе, бекон, айсберг, пармезан, соус «цезарь», моцарелла, томатный соус
+      - generic [ref=f5e679]:
+        - generic [ref=f5e680]: Пицца сладкая
+        - list [ref=f5e681]:
+          - listitem [ref=f5e682]:
+            - generic [ref=f5e683]:
+              - generic [ref=f5e684]: Пицца с вишней
+              - generic [ref=f5e686]: 645 руб.
+            - paragraph [ref=f5e688]: вишня с/м, моцарелла, ананас консерв., сгущенное молоко
+          - listitem [ref=f5e689]:
+            - generic [ref=f5e690]:
+              - generic [ref=f5e691]: Пицца с яблоком
+              - generic [ref=f5e693]: 645 руб.
+            - paragraph [ref=f5e695]: яблоко, нутелла, моцарелла, грецкий орех, сливочное мороженое
+          - listitem [ref=f5e696]:
+            - generic [ref=f5e697]:
+              - generic [ref=f5e698]: Пицца с бананом
+              - generic [ref=f5e700]: 645 руб.
+            - paragraph [ref=f5e702]: банан, нутелла, моцарелла, сливочное мороженое, маршмеллоу
+      - generic [ref=f5e703]:
+        - generic [ref=f5e704]: Гарниры
+        - list [ref=f5e705]:
+          - listitem [ref=f5e706]:
+            - generic [ref=f5e707]:
+              - generic [ref=f5e708]: Картофель фри
+              - generic [ref=f5e710]: 230 руб.
+            - generic [ref=f5e711]:
+              - paragraph [ref=f5e712]: подается с кетчупом
+              - generic [ref=f5e713]: 120/40 г
+          - listitem [ref=f5e714]:
+            - generic [ref=f5e715]:
+              - generic [ref=f5e716]: Кус-кус
+              - generic [ref=f5e718]: 180 руб.
+            - generic [ref=f5e719]:
+              - paragraph
+              - generic [ref=f5e720]: 200 г
+          - listitem [ref=f5e721]:
+            - generic [ref=f5e722]:
+              - generic [ref=f5e723]: Картофельные дольки
+              - generic [ref=f5e725]: 260 руб.
+            - generic [ref=f5e726]:
+              - paragraph [ref=f5e727]: подается с чесночным соусом
+              - generic [ref=f5e728]: 120/40 г
+          - listitem [ref=f5e729]:
+            - generic [ref=f5e730]:
+              - generic [ref=f5e731]: Овощи-гриль
+              - generic [ref=f5e733]: 440 руб.
+            - generic [ref=f5e734]:
+              - paragraph [ref=f5e735]: подается с соусом песто
+              - generic [ref=f5e736]: 250/40 г
+      - generic [ref=f5e737]:
+        - generic [ref=f5e738]: Меню для маленьких гостей
+        - list [ref=f5e739]:
+          - listitem [ref=f5e740]:
+            - generic [ref=f5e741]:
+              - generic [ref=f5e742]: Бантики с курицей в сливочном соусе
+              - generic [ref=f5e744]: 290 руб.
+            - generic [ref=f5e745]:
+              - paragraph
+              - generic [ref=f5e746]: 200 г
+          - listitem [ref=f5e747]:
+            - generic [ref=f5e748]:
+              - generic [ref=f5e749]: Бургер с курочкой
+              - generic [ref=f5e751]: 290 руб.
+            - generic [ref=f5e752]:
+              - paragraph
+              - generic [ref=f5e753]: 200 г
+          - listitem [ref=f5e754]:
+            - generic [ref=f5e755]:
+              - generic [ref=f5e756]: Спагетти
+              - generic [ref=f5e758]: 150 руб.
+            - generic [ref=f5e759]:
+              - paragraph
+              - generic [ref=f5e760]: 100 г
+          - listitem [ref=f5e761]:
+            - generic [ref=f5e762]:
+              - generic [ref=f5e763]: Бантики
+              - generic [ref=f5e765]: 150 руб.
+            - generic [ref=f5e766]:
+              - paragraph
+              - generic [ref=f5e767]: 100 г
+          - listitem [ref=f5e768]:
+            - generic [ref=f5e769]:
+              - generic [ref=f5e770]: Спагетти с сыром
+              - generic [ref=f5e772]: 230 руб.
+            - generic [ref=f5e773]:
+              - paragraph
+              - generic [ref=f5e774]: 130 г
+          - listitem [ref=f5e775]:
+            - generic [ref=f5e776]:
+              - generic [ref=f5e777]: Бантики с сыром
+              - generic [ref=f5e779]: 230 руб.
+            - generic [ref=f5e780]:
+              - paragraph
+              - generic [ref=f5e781]: 130 г
+          - listitem [ref=f5e782]:
+            - generic [ref=f5e783]:
+              - generic [ref=f5e784]: Картофельное пюре
+              - generic [ref=f5e786]: 210 руб.
+            - generic [ref=f5e787]:
+              - paragraph
+              - generic [ref=f5e788]: 150 г
+          - listitem [ref=f5e789]:
+            - generic [ref=f5e790]:
+              - generic [ref=f5e791]: Картофельный алфавит фри
+              - generic [ref=f5e793]: 280 руб.
+            - generic [ref=f5e794]:
+              - paragraph [ref=f5e795]: подается с кетчупом
+              - generic [ref=f5e796]: 120 г
+          - listitem [ref=f5e797]:
+            - generic [ref=f5e798]:
+              - generic [ref=f5e799]: Куриная котлетка
+              - generic [ref=f5e801]: 150 руб.
+            - generic [ref=f5e802]:
+              - paragraph
+              - generic [ref=f5e803]: 70 г
+          - listitem [ref=f5e804]:
+            - generic [ref=f5e805]:
+              - generic [ref=f5e806]: Котлетка из трески
+              - generic [ref=f5e808]: 160 руб.
+            - generic [ref=f5e809]:
+              - paragraph
+              - generic [ref=f5e810]: 90 г
+          - listitem [ref=f5e811]:
+            - generic [ref=f5e812]:
+              - generic [ref=f5e813]: Венская сосиска
+              - generic [ref=f5e815]: 150 руб.
+            - generic [ref=f5e816]:
+              - paragraph
+              - generic [ref=f5e817]: 70 г
+          - listitem [ref=f5e818]:
+            - generic [ref=f5e819]:
+              - generic [ref=f5e820]: Наггетсы
+              - generic [ref=f5e822]: 320 руб.
+            - generic [ref=f5e823]:
+              - paragraph [ref=f5e824]: подаются с кетчупом
+              - generic [ref=f5e825]: 160/40 г
+      - paragraph [ref=f5e826]:
+        - text: Полное меню, состав и вес блюд могут уточняться — актуальную информацию сообщит официант в зале. Бронь и предзаказ по телефону
+        - link "+7 978 523-01-45" [ref=f5e827] [cursor=pointer]:
+          - /url: tel:+79785230145
+        - text: .
+  - contentinfo [ref=f5e828]:
+    - generic [ref=f5e829]:
+      - generic [ref=f5e830]: Здрасьте,гости
+      - generic [ref=f5e831]:
+        - generic [ref=f5e832]:
+          - heading "Контакты" [level=3] [ref=f5e833]
+          - paragraph [ref=f5e834]:
+            - link "+7 978 523-01-45" [ref=f5e835] [cursor=pointer]:
+              - /url: tel:+79785230145
+          - paragraph [ref=f5e836]: ул. Калинина, 11, Джанкой,1 этаж, Республика Крым
+        - generic [ref=f5e837]:
+          - heading "Часы" [level=3] [ref=f5e838]
+          - paragraph [ref=f5e839]: Ежедневно 8:00–21:00
+          - paragraph [ref=f5e840]: "Завтраки: 9:00–12:00"
+        - generic [ref=f5e841]:
+          - heading "На карте" [level=3] [ref=f5e842]
+          - paragraph [ref=f5e843]:
+            - link "Яндекс.Карты →" [ref=f5e844] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/zdraste_gosti/145250516033/
+    - generic [ref=f5e845]:
+      - generic [ref=f5e846]: © 2026 «Здрасьте, гости»
+      - generic [ref=f5e847]: Хорошее место 2026
